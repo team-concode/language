@@ -1,0 +1,27 @@
+[
+  {
+    "key": "desc",
+    "ko": "Graytail은 태평양의 작은 섬을 배경으로 펼쳐지는, 상호작용으로 가득한 퍼즐과 전투가 있는 젤다 라이크 액션 어드벤처 게임입니다. 실종된 최고의 여 조종사의 흔적을 찾고 섬에 숨겨진 비밀을 밝혀내세요.",
+    "en": "Graytail is a Zelda-like action-adventure game with interactive puzzles and combat set on a small island in the Pacific. Find the missing best female pilot and uncover the secrets hidden on the island."
+  },
+  {
+    "key": "interaction.key",
+    "ko": "“상호작용”을 이용한 퍼즐 해결",
+    "en": "Interaction and Puzzles"
+  },
+  {
+    "key": "interaction.desc",
+    "ko": "상자에 불을 붙이고, 불이 붙은 상자를 집어 던져 풀 숲에 불을 번지게 할 수 있습니다. 잡고, 던지고, 불을 붙이고, 점프를 하고, 물체를 튕겨내고 등등의 다양한 상호작용이 있습니다. 각각의 상호작용이 서로 연계되어 다양한 효과를 만들어 냅니다. 문제를 푸는 방법은 여러가지일 수 있습니다. 자연스럽게 생각한대로 문제를 해결해보세요.",
+    "en": "You can light a box on fire, pick it up and throw it to spread the fire in the grass. There are a variety of interactions such as grabbing, throwing, lighting fires, jumping, deflecting objects, and more. Each interaction is linked to each other to create various effects. There can be many ways to solve a problem. Solve problems the way you think."
+  },
+  {
+    "key": "story.key",
+    "ko": "실종된 조종사와 섬의 비밀",
+    "en": "The missing pilot and the secret of the island"
+  },
+  {
+    "key": "story.desc",
+    "ko": "최고의 여 조종사가 비행 중 실종됩니다. 여러 탐사대가 그녀를 찾지만 계속 실패합니다. 시간이 지나고 사건은 점점 잊혀져 가고 결국 바다에 추락으로 종결 처리됩니다. 10년 후 남겨진 딸이 엄마를 찾기 위해 케빈의 사무소로 찾아옵니다. 둘은 엄마를 찾아 태평양의 작은 섬으로 들어오고 섬의 비밀과 마주합니다.",
+    "en": "The best female pilot goes missing mid-flight. Several expeditions search for her, but expeditions continue to fail. As time passes, the incident is forgotten and ultimately ends with a crash into the sea. Ten years later, her left behind daughter comes to Kevin's office looking for her mother. The two come to a small island in the Pacific in search of her mother and encounter the island's secrets."
+  }
+]
