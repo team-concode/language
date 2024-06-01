@@ -47,6 +47,12 @@ const App = () => {
   };
   
   const translate = async(source, target, text) => {
+    if (target === 'zhHant') {
+      target = 'zh-hant';
+    } else if (target === 'zhHans') {
+      target = 'zh-hans';
+    }
+    
     try {
       let response = await axios({
         method: 'post',
