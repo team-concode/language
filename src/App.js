@@ -121,6 +121,7 @@ const App = () => {
           + state.de + "\t"
           + state.fr + "\t"
           + state.it + "\t"
+          + state.es + "\t"
           + state.pt + "\t"
           + state.zhHant + "\t"
           + state.zhHans + "\t"
