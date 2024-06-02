@@ -107,3 +107,13 @@ h3.ui.header {
 .body > * {
     margin-top: 0.2em;
 }
+
+pre {
+    background-color: #E6E6FA;    
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+.langH {
+    cursor: pointer;
+}

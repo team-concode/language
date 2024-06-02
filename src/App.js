@@ -14,7 +14,7 @@ import {
   ListHeader,
   FormField,
   TextArea,
-  Form
+  Form, FormTextArea
 } from "semantic-ui-react";
 
 import "./App.css";
@@ -111,6 +111,15 @@ const App = () => {
     await translateText('en', 'pl');
     await translateText('en', 'th');
   }
+  
+  const handleCopyClipBoardLang = async (lang) => {
+    try {
+      let text = state[lang];
+      await navigator.clipboard.writeText(text);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const handleCopyClipBoard = async () => {
     try {
@@ -162,11 +171,11 @@ const App = () => {
                     control={Input}
                     label='Project'
                 />
-                <FormField
+                <FormTextArea
                     id="ko"
                     onChange={onTextChange}
-                    control={TextArea}
                     label='Korean'
+                    rows='7'
                 />
                 <FormField
                     control={Button}
@@ -174,11 +183,11 @@ const App = () => {
                 >
                   Translate to English
                 </FormField>
-                <FormField
+                <FormTextArea
                     id="en"
-                    control={TextArea}
                     onChange={onTextChange}
                     value={state.en}
+                    rows='7'
                     label='English'
                 />
                 <FormField control={Button}
@@ -190,48 +199,68 @@ const App = () => {
               <br/>
               <List>
                 <ListItem>
-                  <ListHeader>Japanese</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('ja')}>Japanese</ListHeader>
+                  <pre>
                   {state.ja}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>German</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('de')}>German</ListHeader>
+                  <pre>
                   {state.de}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>French</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('fr')}>French</ListHeader>
+                  <pre>
                   {state.fr}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Italian</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('it')}>Italian</ListHeader>
+                  <pre>
                   {state.it}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Spanish</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('es')}>Spanish</ListHeader>
+                  <pre>
                   {state.es}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Portuguese</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('pt')}>Portuguese</ListHeader>
+                  <pre>
                   {state.pt}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Chinese Traditional</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('zhHant')}>Chinese Traditional</ListHeader>
+                  <pre>
                   {state.zhHant}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Chinese Simplified</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('zhHant')}>Chinese Simplified</ListHeader>
+                  <pre>
                   {state.zhHans}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Polish</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('pl')}>Polish</ListHeader>
+                  <pre>
                   {state.pl}
+                  </pre>
                 </ListItem>
                 <ListItem>
-                  <ListHeader>Thai</ListHeader>
+                  <ListHeader className="langH" onClick={() => handleCopyClipBoardLang('th')}>Thai</ListHeader>
+                  <pre>
                   {state.th}
+                  </pre>
                 </ListItem>
               </List>
 
-            <Button primary onClick={() => handleCopyClipBoard()}>
+              <Button primary onClick={() => handleCopyClipBoard()}>
               Copy to clipboard
             </Button>
           </Grid.Column>
